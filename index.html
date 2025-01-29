@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rullon - Магазин шпалер, лінолеуму та іншого</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff; /* Білий текст за замовчуванням */
+            animation: fadeIn 1s ease-in-out;
+            line-height: 1.6;
+            text-align: center;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        /* Шрифт та тінь для 3D ефекту */
+        h1, h2, h3, p, footer {
+            text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.1), 0 0 15px rgba(255, 255, 255, 0.2), 0 0 25px rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+        h1:hover, h2:hover, h3:hover, p:hover, footer:hover {
+            text-shadow: 0 0 15px rgba(0, 255, 255, 1); /* Синє підсвічування по контуру при наведенні */
+        }
+        header {
+            background: #222;
+            color: white;
+            padding: 20px;
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 30px;
+            background: #1e1e1e;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease-in-out;
+            margin-bottom: 50px;
+        }
+        .container:hover {
+            transform: scale(1.02);
+        }
+        h2 {
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: #ddd;
+            margin-bottom: 20px;
+            text-align: justify;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .gallery img {
+            width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+        }
+        .contact-info {
+            margin-top: 30px;
+            font-size: 18px;
+            text-align: center;
+        }
+        .contact-info p {
+            margin: 15px 0;
+        }
+        footer {
+            background: #222;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 14px;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+        .social-links a:hover {
+            color: #ffcc00;
+        }
+        .video-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .video-container video {
+            width: 280px;
+            height: 500px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Магазин "Rullon" - Шпалери, Лінолеум, Килими, Плінтуси, Світильники, Фарби
+    </header>
+    <div class="container">
+        <h2>Ласкаво просимо в "Rullon"!</h2>
+        <p>В наших магазинах ви знайдете широкий вибір шпалер у наявності та під замовлення за каталогами, лінолеуму, килимів, плінтусів, світильників та фарб за доступними цінами.</p>
+        
+        <h3>Наш магазин</h3>
+        <div class="gallery">
+            <img src="магазин.png" alt="Фото магазину 1">
+            <img src="зал 1.jpeg" alt="Фото магазину 2">
+            <img src="зал 2.jpeg" alt="Фото магазину 3">
+        </div>
+        
+        <h3>Наші партнери</h3>
+        <div class="gallery">
+            <img src="партнер 1.png" alt="Партнер 1">
+            <img src="партнер 2.jpg" alt="Партнер 2">
+            <img src="партнер 3.jpg" alt="Партнер 3">
+            <img src="партнер 4.png" alt="Партнер 4">
+            <img src="партнер 5.jpeg" alt="Партнер 5">
+            <img src="партнер 6.png" alt="Партнер 6">
+        </div>
+
+        <div class="contact-info">
+            <h3>Контактна інформація</h3>
+            <p><strong>Магазин на лівому березі:</strong> м.Дніпро, вул. Березиньска, 27А</p>
+            <p><strong>Магазин на правому березі:</strong> м.Дніпро, вул. Велика Діївська, 46</p>
+            <p><strong>Телефон:</strong> 094 910 8884</p>
+            <p><strong>Email:</strong> rullon@i.ua</p>
+            <p><strong>Час роботи:</strong> Пн-Сб: 09:00 - 18:00, Нд: 09:00 - 17:00</p>
+            <p class="social-links">
+                <strong>Соціальні мережі:</strong>
+                <a href="https://www.facebook.com/rullonShop/">Facebook</a> |
+                <a href="https://www.instagram.com/rullon_dnepr/?igsh=N2UzczdqZXI3MHJn">Instagram</a>
+            </p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2005-2025 Rullon - Всі права захищені.
+    </footer>
+</body>
+</html>
